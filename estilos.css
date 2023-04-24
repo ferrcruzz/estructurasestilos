@@ -36,7 +36,7 @@ nav a:hover{
     text-align:left;
     font-family: 'Indie Flower', cursive;
     display: flex;
-    justify-content: space-around;
+    
     flex-direction:row;
 }
 main img { width: 250px;
