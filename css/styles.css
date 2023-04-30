@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #000000;
+background-image: linear-gradient(147deg, #000000 0%, #434343 74%);;
+    
+}
+
+.contenedor {
+    ;
+    margin: 10px;
+
+    box-sizing: content-box;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: min-content;
+    grid-template-areas:
+        "parte1 parte1 parte1"
+        "parte2 parte2 parte3"
+        "parte4 parte4 parte4"
+        "parte5 parte5 parte5";
+}
+
+.parte1 {
+    z-index: 1;
+
+    position: sticky;
+    top: 0;
+    margin-bottom: 0;
+    background-color: #e84393;
+    background-image: linear-gradient(315deg, #e84393 0%, #000000 74%);;
+    width: auto;
+    height: 150px;
+    
+    flex: none;
+    justify-content: space-around;
+    padding: 10px;
+    
+    align-items: end;
+    display: flex;
+    border: solid;
+    box-sizing: border-box;
+grid-area: parte1;
+
+}
+
+.parte1 nav ul {
+    list-style: none;
+    margin: 10px;
+
+
+    display: flex;
+
+
+
+}
+
+.parte1 nav ul a {
+    font-family: 'Bungee Inline', cursive;
+
+    text-decoration: none;
+    
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 0.7rem;
+
+}
+
+.parte1 a img {
+    max-width: 80%;
+    border-radius: 20%;
+    margin: auto;
+}
+
+.parte1 li :hover {
+    color: white;
+    background-color: black;
+    border-radius: 90%;
+
+}
+
+.parte2 {
+    color: #e84393;
+  
+    grid-area: parte2;
+    display: grid;
+    place-items: center;
+}
+
+.parte2 h1 {
+    font-size:60px;
+    font-family: 'Creepster', cursive;
+    text-align: center;
+}
+
+.parte2 p {
+    font-family: 'Bungee Inline', cursive;
+    font-size: large;
+    margin: 10px;
+}
+
+.parte3 {
+    margin: 5px;
+    grid-area: parte3;
+}
+
+.parte4 {
+    ;
+    margin: 10px;
+
+    grid-area: parte4;
+    box-sizing: content-box;
+}
+
+.parte4 h3 {
+    text-align: center;
+}
+
+.parte4 img {
+    width: 200px;
+    opacity: 0.9;
+    border: 2.5px groove pink;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.parte5 {
+   
+    width: auto;
+    justify-content: center;
+    margin: 10px;
+    
+place-items: center;
+display: flex;
+
+    grid-area: parte5;
+    box-sizing: border-box;
+}
+.parte5 div { margin: 10px; font-size: 50px;
+}
+
+.parte5 img {
+    width: 95%;
+    height: 60%;
+    ;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: background-color: #802201;
+        background-image: linear-gradient(326deg, #802201 0%, #210d10 74%);
+        ;
+    }
+.parte p { text-align: center; 
+    font-size: small;
+}
+    .contenedor {
+       grid-template-areas: 
+            "parte1 parte1 parte1"
+            "parte2 parte2 parte2"
+            "parte3 parte3 parte3"
+            "parte4 parte4 parte4"
+            "parte5 parte5 parte5";
+    }
+}
